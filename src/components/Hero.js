@@ -14,6 +14,18 @@ const Hero = () => {
     }
   }, [index, text, fullText]);
 
+  // Function to handle resume download
+  const handleResumeDownload = () => {
+    const resumeUrl = "./resume DivyanshiNaithani.pdf "; // Replace with the actual path to your resume file
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Divyanshi_Naithani_Resume.pdf"; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
   return (
     <main className="flex flex-row items-center justify-center mt-10 px-5">
       {/* Left Section: Icons */}
@@ -34,7 +46,7 @@ const Hero = () => {
 
           {/* LinkedIn */}
           <a
-            href="www.linkedin.com/in/divyanshi-naithani"
+            href="https://www.linkedin.com/in/divyanshi-naithani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
             className="group"
@@ -90,18 +102,15 @@ const Hero = () => {
 
         {/* Description */}
         <p className="mt-4 text-lg max-w-3xl">
-          I'm Divyanshi, a dedicated full-stack developer with extensive
-          experience in creating numerous websites. I am passionate about
-          exploring and mastering new technologies to enhance my skills and stay
-          ahead in the ever-evolving tech landscape.
+          I'm Divyanshi, a dedicated full-stack developer with extensive experience in creating numerous websites. I am passionate about exploring and mastering new technologies to enhance my skills and stay ahead in the ever-evolving tech landscape.
         </p>
 
         {/* Buttons */}
         <div className="mt-6 flex space-x-4">
-          <button className="bg-gradient-to-r from-pink-500 to-orange-500 text-white px-6 py-2 rounded-lg">
-            Connect with me
-          </button>
-          <button className="border-2 border-white px-6 py-2 rounded-lg hover:bg-white hover:text-black">
+          <button 
+            onClick={handleResumeDownload} 
+            className="border-2 border-white px-6 py-2 rounded-lg hover:bg-white hover:text-black"
+          >
             My Resume
           </button>
         </div>

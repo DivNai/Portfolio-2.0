@@ -4,44 +4,26 @@ const LatestWork = () => {
   const projects = [
     {
       id: 1,
-      image: "./Project 1.png", // Replace with your project image
+      image: "./Project 1.png", 
       title: "Project 1",
-      link: "https://example.com/project1", // Replace with your project link
+      link: "https://github.com/DivNai/Portfolio-2.0", 
     },
     {
       id: 2,
-      image: "./Project 2.png", // Replace with your project image
+      image: "./Project 2.png",
       title: "Project 2",
-      link: "https://github.com/s4bbi/spandan-3.0", // Replace with your project link
+      link: "https://github.com/s4bbi/spandan-3.0",
     },
     {
       id: 3,
-      image: "https://via.placeholder.com/150", // Replace with your project image
+      image: "./Screenshot 2025-01-13 121604.png", 
       title: "Project 3",
-      link: "https://github.com/DivNai/Real-Time-Voice-Translator", // Replace with your project link
-    },
-    {
-      id: 4,
-      image: "https://via.placeholder.com/150", // Replace with your project image
-      title: "Project 4",
-      link: "https://example.com/project4", // Replace with your project link
-    },
-    {
-      id: 5,
-      image: "https://via.placeholder.com/150", // Replace with your project image
-      title: "Project 5",
-      link: "https://example.com/project5", // Replace with your project link
-    },
-    {
-      id: 6,
-      image: "https://via.placeholder.com/150", // Replace with your project image
-      title: "Project 6",
-      link: "https://example.com/project6", // Replace with your project link
+      link: "https://github.com/DivNai/Real-Time-Voice-Translator",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white py-10">
+    <div className=" bg-black text-white py-10">
       <h1 className="text-4xl font-bold text-center mb-12">
         My <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">Latest work</span>
       </h1>
