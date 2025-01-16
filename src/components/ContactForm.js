@@ -28,6 +28,7 @@ const ContactForm = () => {
   };
 
   return (
+    <section id="contactform" className="Contact-Form-1">
     <div className="min-h-screen flex items-center justify-center bg-black text-white px-4">
       <div className="max-w-4xl w-full bg-gray-1000 p-8 rounded-lg shadow-lg">
         <h2 className="text-4xl font-bold mb-6 text-center text-gradient w-full py-3  ">
@@ -82,6 +83,7 @@ const ContactForm = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

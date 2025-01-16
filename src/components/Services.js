@@ -52,6 +52,8 @@ const Services = () => {
   };
 
   return (
+    <section id="services" className="Services-section">
+    <div className="max-w-4xl w-full bg-gray-1000 p-8 rounded-lg shadow-lg"></div>
     <div className="min-h-screen bg-black text-white py-10">
       <h1 className="text-4xl font-bold text-center mb-12">
         My <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">Services</span>
@@ -82,6 +84,7 @@ const Services = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

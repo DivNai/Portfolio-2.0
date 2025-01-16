@@ -23,6 +23,8 @@ const LatestWork = () => {
   ];
 
   return (
+    <section id="latestwork" className="latest-work">
+    <div className="max-w-4xl w-full bg-gray-1000 p-8 rounded-lg shadow-lg"></div>
     <div className=" bg-black text-white py-10">
       <h1 className="text-4xl font-bold text-center mb-12">
         My <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">Latest work</span>
@@ -59,6 +61,7 @@ const LatestWork = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

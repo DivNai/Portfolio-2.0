@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "I'm Divyanshi Naithani, Full Stack Developer";
+  const fullText = "I'm Divyanshi Naithani, Front-End Developer";
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -27,6 +27,7 @@ const Hero = () => {
 
 
   return (
+    <section id="hero" className="hero-section">
     <main className="flex flex-row items-center justify-center mt-10 px-5">
       {/* Left Section: Icons */}
       <div className="flex flex-col items-center mr-4">
@@ -102,7 +103,7 @@ const Hero = () => {
 
         {/* Description */}
         <p className="mt-4 text-lg max-w-3xl">
-          I'm Divyanshi, a dedicated full-stack developer with extensive experience in creating numerous websites. I am passionate about exploring and mastering new technologies to enhance my skills and stay ahead in the ever-evolving tech landscape.
+          I'm Divyanshi, a dedicated frontend developer with extensive experience in creating numerous websites. I am passionate about exploring and mastering new technologies to enhance my skills and stay ahead in the ever-evolving tech landscape.
         </p>
 
         {/* Buttons */}
@@ -116,6 +117,7 @@ const Hero = () => {
         </div>
       </div>
     </main>
+    </section>
   );
 };
 

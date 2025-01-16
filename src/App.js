@@ -1,5 +1,4 @@
-// src/App.js
-// import { useWebVitals } from 'web-vitals';
+// export default App;
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
