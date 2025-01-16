@@ -10,16 +10,16 @@ const Hero = () => {
       setTimeout(() => {
         setText(text + fullText[index]);
         setIndex(index + 1);
-      }, 45); // Adjust typing speed here (100ms per character)
+      }, 45);
     }
   }, [index, text, fullText]);
 
   // Function to handle resume download
   const handleResumeDownload = () => {
-    const resumeUrl = "./resume DivyanshiNaithani.pdf "; // Replace with the actual path to your resume file
+    const resumeUrl = "./resume DivyanshiNaithani.pdf "; 
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Divyanshi_Naithani_Resume.pdf"; // Name of the downloaded file
+    link.download = "Divyanshi_Naithani_Resume.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -29,7 +29,6 @@ const Hero = () => {
   return (
     <section id="hero" className="hero-section">
     <main className="flex flex-row items-center justify-center mt-10 px-5">
-      {/* Left Section: Icons */}
       <div className="flex flex-col items-center mr-4">
         {/* Social Media Icons */}
         <div className="flex flex-col gap-4">
@@ -86,7 +85,6 @@ const Hero = () => {
 
       {/* Right Section: Profile Picture, Title, Description, and Buttons */}
       <div className="flex flex-col items-center text-center">
-        {/* Profile Picture */}
         <img
           src="./141929578.png"
           alt="Profile"
