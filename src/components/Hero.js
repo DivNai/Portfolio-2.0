@@ -58,7 +58,7 @@ const Hero = () => {
           </a>
 
           {/* Twitter */}
-          <a
+          {/* <a
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -67,7 +67,7 @@ const Hero = () => {
             <div className="text-gray-400 group-hover:text-pink-500 transition">
               <i className="fab fa-twitter fa-lg"></i>
             </div>
-          </a>
+          </a> */}
 
           {/* Email */}
           <a

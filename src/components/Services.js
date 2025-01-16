@@ -8,42 +8,42 @@ const Services = () => {
       id: 1,
       title: "Web design",
       description:
-        "I create visually appealing, user-friendly, and responsive website designs that adapt seamlessly to all devices.",
-      moreContent: "Additional details about web design services...",
+        "Crafting visually stunning and user-friendly websites that blend aesthetics with functionality. I specialize in creating responsive designs tailored to deliver seamless user experiences across all devices.",
+      moreContent: " My focus is on responsive design, ensuring that your website looks and functions perfectly across desktops, tablets, and mobile devices. Whether it’s a personal portfolio, an e-commerce platform, or a business site, I bring your vision to life with precision and creativity.",
     },
     {
       id: 2,
       title: "Graphics design",
       description:
-        "From logos to banners, my designs cater to marketing, social media, and web needs, ensuring a consistent and impactful brand presence.",
-      moreContent: "Additional details about graphics design services...",
+        "Bringing ideas to life with impactful visual storytelling. I design creative assets such as logos, banners, illustrations, and marketing materials that captivate audiences and elevate brands.",
+      moreContent: "From concept to execution, I bring ideas to life with bold colors, striking typography, and innovative layouts. My expertise includes branding, poster design, social media graphics, and much more, tailored to reflect your unique style and message.",
     },
     {
       id: 3,
       title: "UI & UX",
       description:
-        "I craft intuitive and interactive user interfaces and experiences that prioritize usability and customer satisfaction.",
-      moreContent: "Additional details about UI & UX services...",
+        "Designing intuitive interfaces that prioritize user experience and accessibility. I focus on creating layouts that are not only visually appealing but also ensure smooth navigation and user satisfaction.",
+      moreContent: "I design intuitive interfaces that guide users effortlessly, focusing on usability, accessibility, and aesthetics. My process includes user research, wireframing, prototyping, and user testing to ensure the final product meets both business goals and user needs.",
     },
     {
       id: 4,
       title: "App design",
-      description: "My designs focus on creating engaging and functional mobile app experiences.",
-      moreContent: "Additional details about app design services...",
+      description: "Designing sleek and innovative mobile and web app interfaces that focus on functionality, interactivity, and a user-centric approach to drive engagement and usability.",
+      moreContent: " My approach involves understanding your target audience and their needs, then crafting app designs that enhance usability while aligning with your brand identity.Whether it’s a native app or a web application, I focus on usability, aesthetics, and performance.",
     },
     {
       id: 5,
       title: "Front End Development",
       description:
-        "I bring designs to life using modern front-end technologies, ensuring responsiveness and performance.",
-      moreContent: "Additional details about front-end development services...",
+        "Building responsive and dynamic web applications using modern tools and technologies. I turn creative designs into functional interfaces, ensuring pixel-perfect implementation and performance optimization.",
+      moreContent: "I turn creative concepts into fully functional websites and applications. Using modern technologies like HTML, CSS, JavaScript, and frameworks like React, I build responsive and interactive interfaces that deliver exceptional user experiences. I prioritize clean code, performance optimization, and cross-browser compatibility, ensuring your website runs smoothly across all platforms. ",
     },
     {
       id: 6,
       title: "Content writing",
       description:
-        "I create clear content for blogs, websites, or other platforms, tailored to attract and retain audiences.",
-      moreContent: "Additional details about content writing services...",
+        "Creating compelling and engaging content tailored to your audience. From blog posts to website copy, I focus on delivering clear, impactful, and SEO-friendly writing to enhance your brand's online presence.",
+      moreContent: "I focus on delivering clear, compelling,content that resonates with your audience. My writing style is adaptable, allowing me to cater to a wide range of industries and target markets. ",
     },
   ];
 
