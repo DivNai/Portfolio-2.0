@@ -53,37 +53,37 @@ const Services = () => {
 
   return (
     <section id="services" className="Services-section">
-    <div className="max-w-4xl w-full bg-gray-1000 p-8 rounded-lg shadow-lg"></div>
-    <div className="min-h-screen bg-black text-white py-10">
-      <h1 className="text-4xl font-bold text-center mb-12">
-        My <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">Services</span>
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-10">
-        {services.map((service) => (
-          <div
-            key={service.id}
-            className={`border border-gray-600 rounded-lg p-6 hover:border-pink-500 transition ${
-              expandedService === service.id ? "h-auto" : "h-64"
-            }`}
-          >
-            <h2 className="text-xl font-semibold mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">{service.id < 10 ? `0${service.id}` : service.id}</span>{" "}
-              {service.title}
-            </h2>
-            <p className="text-gray-300 mb-4">{service.description}</p>
-            {expandedService === service.id && (
-              <p className="text-gray-300 mb-4">{service.moreContent}</p>
-            )}
-            <button
-              onClick={() => handleReadMore(service.id)}
-              className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 flex items-center font-semibold hover:underline"
+      <div className="max-w-4xl w-full bg-gray-1000 p-8 rounded-lg shadow-lg"></div>
+      <div className="min-h-screen bg-black text-white py-10">
+        <h1 className="text-4xl font-bold text-center mb-12">
+          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">Services</span>
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-10">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className={`border border-gray-600 rounded-lg p-6 hover:border-pink-500 transition-all ${
+                expandedService === service.id ? "h-auto" : "h-56"
+              }`} // Updated height class to reduce space for collapsed items
             >
-              {expandedService === service.id ? "Read Less" : "Read More"} <span className="ml-2">→</span>
-            </button>
-          </div>
-        ))}
+              <h2 className="text-xl font-semibold mb-4">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">{service.id < 10 ? `0${service.id}` : service.id}</span>{" "}
+                {service.title}
+              </h2>
+              <p className="text-gray-300 mb-4">{service.description}</p>
+              {expandedService === service.id && (
+                <p className="text-gray-300 mb-4">{service.moreContent}</p>
+              )}
+              <button
+                onClick={() => handleReadMore(service.id)}
+                className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 flex items-center font-semibold hover:underline"
+              >
+                {expandedService === service.id ? "Read Less" : "Read More"} <span className="ml-2">→</span>
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };
