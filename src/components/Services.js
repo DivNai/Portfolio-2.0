@@ -43,7 +43,7 @@ const Services = () => {
       title: "Content writing",
       description:
         "Creating compelling and engaging content tailored to your audience. From blog posts to website copy, I focus on delivering clear, impactful, and SEO-friendly writing to enhance your brand's online presence.",
-      moreContent: "I focus on delivering clear, compelling,content that resonates with your audience. My writing style is adaptable, allowing me to cater to a wide range of industries and target markets. ",
+      moreContent: "I focus on delivering clear, compelling content that resonates with your audience. My writing style is adaptable, allowing me to cater to a wide range of industries and target markets. ",
     },
   ];
 
@@ -58,7 +58,7 @@ const Services = () => {
         <h1 className="text-4xl font-bold text-center mb-12">
           My <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">Services</span>
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-10">
           {services.map((service) => (
             <div
               key={service.id}
