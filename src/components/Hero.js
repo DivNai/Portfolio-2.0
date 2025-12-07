@@ -16,7 +16,7 @@ const Hero = () => {
 
   // Function to handle resume download
   const handleResumeDownload = () => {
-    const resumeUrl = "./resume DivyanshiNaithani.pdf"; 
+    const resumeUrl = "./Resume_Divyanshi_Naithani.pdf"; 
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Divyanshi_Naithani_Resume.pdf"; 
