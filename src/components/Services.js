@@ -71,7 +71,7 @@ const Services = () => {
             >
               <h2 className="text-xl font-semibold mb-4">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
-                  {service.id < 10 ?'0${service.id}': service.id}</span>{" "}
+                  <span>{service.id < 10 ? `0${service.id}` : service.id}</span>{" "}
                 {service.title}
               </h2>
               <p className="text-gray-300 mb-4">{service.description}</p>
