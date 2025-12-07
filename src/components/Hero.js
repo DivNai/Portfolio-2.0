@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "I'm Divyanshi Naithani, Front-End Developer";
+  const fullText = "I'm Divyanshi Naithani, Full-Stack Developer";
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
