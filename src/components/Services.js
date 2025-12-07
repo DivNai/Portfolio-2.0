@@ -69,15 +69,15 @@ const Services = () => {
                 expandedService === service.id ? "h-auto" : "h-64 overflow-hidden"
               }`}
             >
-              <h2 className="text-xl font-semibold mb-4">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
-                  <span>{service.id < 10 ? `0${service.id}` : service.id}</span>{" "}
-                {service.title}
-              </h2>
-              <p className="text-gray-300 mb-4">{service.description}</p>
-              {expandedService === service.id && (
-                <p className="text-gray-300 mb-4">{service.moreContent}</p>
-              )}
+              <h2>
+  <span>{service.id < 10 ? `0${service.id}` : service.id}</span>{" "}
+  {service.title}
+</h2>
+<p className="text-gray-300 mb-4">{service.description}</p>
+{expandedService === service.id && (
+  <p className="text-gray-300 mb-4">{service.moreContent}</p>
+)}
+
               <button
                 onClick={() => handleReadMore(service.id)}
                 className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 flex items-center font-semibold hover:underline"
